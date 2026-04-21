@@ -14,4 +14,8 @@ func _ready():
 
 func _count_new_instance():
 	instancesCount +=1
-	$CountLabel.text = ("Cantidad de Instancias: " + str(instancesCount)) #Me encanta concatenar Strings. No irónicamente. No sé por qué pero me parece genial.
+	$CountLabel.text = "Cantidad de Instancias: " + str(instancesCount) #Me encanta concatenar Strings. No irónicamente. No sé por qué pero me parece genial.
+
+func _delete():
+	instancesCount = 0
+	$CountLabel.text = "Cantidad de Instancias: " + str(instancesCount)
